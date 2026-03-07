@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-logo{
+    max-height: 55px;   /* desktop */
+    width: auto;
+    border-radius: 8px;
+}
+
+/* Mobile view */
+@media (max-width: 768px){
+    .nav-logo{
+        max-height: 45px;
+    }
+
+    .navbar-brand{
+        margin-left: 10px !important;
+    }
+}
+
+.nav-bg-1 {
+    background-color: #0D2C54;
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #F4A300;
+}
+
+.navbar .nav-link.active {
+    color: #F4A300 !important;
+    font-weight: 600;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #F4A300;
+    color: #0D2C54;
+}
+
+/* download */
+
+.btn-prospectus {
+    display: inline-block;
+    background-color: #F4A300 !important;
+    color: #0D2C54 !important;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-prospectus:hover {
+    background-color: #e09a00 !important;
+    color: #0D2C54 !important;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.section-title {
+    text-align: center;
+    text-align: start;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #111d5e;
+}
+
+/* Card ko balanced width dene ke liye */
+.card {
+    width: 100%;
+    max-width: 22rem;
+    /* yahan se control karo */
+    margin: auto;
+    /* center me lane ke liye */
+}
+
+/* Row ki side padding thodi kam */
+.row {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .card {
+        max-width: 20rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        max-width: 100%;
+    }
+}
+
+.fa-2x {
+    color:#F4A300;
+}
+
+.fs-3{
+    color:#F4A300
+}
+
+.admission-strip {
+    background: #0D2C54;
+    color: #fff;
+    padding: 70px 20px;
+}
+
+.admission-strip h2 {
+    color: #fff;
+}
+
+.admission-strip .btn {
+    margin: 8px;
+    padding: 10px 22px;
+}
+
+.admission-strip .btn-light {
+    color: #0D2C54;
+    font-weight: 600;
+}
+
+
+.list ul li {
+    position: relative;
+    padding-left: 20px;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.list ul li i {
+    position: absolute;
+    left: 0;
+    color: #e32845;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.courses {
+    background-color: #f4f6f9;
+
+}
+
+.admission {
+    background-color: #f4f6f9;
+}
+
+.event {
+    background-color: #f4f6f9;
+
+}
+
+.footer {
+    text-align: center;
+    background-color: #111d5e;
+    color: white;
+}
+
+.footer-btn {
+    color: white;
+    text-align: center;
+    background-color: rgb(52, 8, 227);
+}
+
+.footer-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright-area{
+    background-color: #1f2c75;
+    color: #f4f6f9;
+}
+
+/* Founder Css Start */
+
+.banner {
+    background-image: url('../img/ChatGPT\ Image\ Feb\ 5\,\ 2026\,\ 12_51_14\ PM.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    position: relative;
+}
+
+/* Overlay */
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 80, 0.5);
+}
+
+/* Text upar rahe */
+.banner h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 40px;
+}
+
+/* Academic CSS */
+
+/* Banner */
+.academic-banner{
+    background: url('../img/ban.png') center/cover no-repeat;
+    height: 320px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.academic-banner::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,60,0.6);
+}
+
+.banner-content{
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-content h1{
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.banner-content p{
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+/* Section */
+.academic-section{
+    background: #f8f9fd;
+    padding: 80px 0;
+}
+
+.academic-text{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.academic-text h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: #111d5e;
+}
+
+.academic-text p{
+    max-width: 750px;
+    margin: auto;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Card */
+.academic-block{
+    background: #fff;
+    border-radius: 18px;
+    padding: 40px;
+    margin-bottom: 70px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* Stage */
+.stage{
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #ff8c00;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.stage i{
+    margin-right: 6px;
+}
+
+/* Text */
+.academic-block h3{
+    font-size: 34px;
+    font-weight: 700;
+    color: #111d5e;
+}
+
+.academic-block p{
+    color: #444;
+    line-height: 1.8;
+}
+
+/* Icon List */
+.academic-points{
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.academic-points li{
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.academic-points i{
+    color: #ff8c00;
+    font-size: 18px;
+}
+
+/* Image */
+.img-hover{
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.img-hover img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.img-hover:hover img{
+    transform: scale(1.08);
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .academic-banner{
+        height: 220px;
+    }
+
+    .banner-content h1{
+        font-size: 28px;
+    }
+
+    .academic-block{
+        padding: 25px;
+    }
+
+    .img-hover img{
+        height: 240px;
+    }
+}
+
+/* acaademic css end */
+
+
+/* Gallery CSS */
+
+.gallery-title h2{
+    text-align: center;
+    color: #002147;
+}
+
+.underline{
+    height: 4px;
+    width: 120px;
+    margin: auto;
+    background-color: #002147;
+}
+
+
+.gallery-box{
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.gallery-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.img-hover:hover img{
+    transform: scale(1.08);
+}
+
+/* Mobile height adjust */
+@media (max-width: 576px){
+    .gallery-box{
+        height: 220px;
+    }
+}
+
+
+/* Contact us CSS  */
+
+.contact-banner{
+    background-image: url('../img/bann.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+.contact-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 80, 0.5);
+}
+.contact-banner h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 40px;
+}
+
+/* Contact Section Css  */
+
+.contact-title{
+    text-align: center;
+    color:#111d5e;
+    
+}
+.contact-section{
+    text-align: center;
+}
+
+.contact-card h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #002147;
+}
+
+
+.contact-info-box h4 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contact-info-box p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.contact-info-box i {
+    color: #ff8c00;
+}
+
+
+/* massage */
+
+.contact-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-card h4 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.form-control {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #0d6efd;
+}
+
+
+/* About us Area css */
+.about-banner{
+    background-image: url('../img/ChatGPT\ Image\ Feb\ 5\,\ 2026\,\ 12_51_14\ PM.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+.about-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 80, 0.5);
+}
+.about-banner h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 40px;
+
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+}
+
+
+.about-img {
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.vision-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.col-lg-4:hover .vision-icon {
+    color: #002147;   /* hover pe halka blue */
+    transform: scale(1.15);
+}
+
+.why-list {
+    text-align: left;        /* text readable rahe */
+    display: inline-block;   /* block center ho */
+}
+
+
+
+
+
